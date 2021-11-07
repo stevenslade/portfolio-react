@@ -20,9 +20,6 @@ const styles = {
         color: 'blue',
         margin: '10px',
     },
-    listStyle: {
-        display: 'inline'
-    }
   };
 
 export default function Footer() {
