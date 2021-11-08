@@ -1,24 +1,128 @@
 import React from 'react';
 
+const styles = {
+  cardStyle: {
+    width: '20rem',
+    fontColor: '#717E8E',
+    borderStyle: 'solid',
+    borderColor: '#717E8E',
+    borderRadius: '10px',
+    borderWidth: '3px',
+    marginTop: '20px',
+    marginLeft: '5px',
+    marginRight: '5px',
+    background: 'black',
+  },
+  textStyle: {
+    fontColor: '#717E8E',
+    textAlign: 'center',
+  },
+  headStyle: {
+    marginTop:'10px',
+    textAlign: 'center',
+  },
+  hrStyle: {
+    borderTop: '10px solid black',
+  },
+  image: {
+    height: '200px',
+    width: '200px',
+    borderRadius: '10px',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    borderStyle: 'solid',
+    borderColor: '#717E8E',
+  },
+  imgContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: '25px',
+  },
+  colorGrey: {
+    color: '#717E8E',
+  },
+  iconStyle: {
+    fontSize: '32px',
+    color: 'blue',
+    margin: '10px',
+  },
+};
+
 export default function Projects() {
   return (
-    <div>
-      <h1>Project Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div className="container">
+      <h1 style={styles.headStyle}>Showcased Projects</h1>
+      <div className="row d-flex justify-content-evenly">
+        <div className="card" style={styles.cardStyle}>
+          <img src="./assets/images/screenshothome.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+          <div className="card-body">
+           <h4 style={styles.colorGrey} className="card-title font-weight-bold">Book Club Collective</h4>
+            <p style={styles.colorGrey} className="card-text">This app allows the user to make a profile, leave book reviews, read reviews left by other users and create a club for other users to join to discuss books.</p>
+              <div className="row">
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Repo" href="https://github.com/stevenslade/Book-Club-Collective"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Deployed App" href="https://intense-tor-64466.herokuapp.com/"><i style={styles.iconStyle} className="bi bi-gear-fill"></i></a>
+              </div>
+          </div>
+        </div>
+        <div className="card" style={styles.cardStyle}>
+          <img src="./assets/images/HHSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+          <div className="card-body">
+            <h4 style={styles.colorGrey} className="card-title font-weight-bold">Hiking Hub</h4>
+            <p style={styles.colorGrey} className="card-text">An app that enables the user to search for local hiking trails and then find trail related content on reddit.</p>
+              <div className="row">
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Repo" href="https://github.com/stevenslade/Hiking-Hub"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Deployed App" href="https://stevenslade.github.io/Hiking-Hub/"><i style={styles.iconStyle} className="bi bi-gear-fill"></i></a>
+              </div>
+          </div>
+        </div>
+        <div className="card" style={styles.cardStyle}>
+          <img src="./assets/images/weatherDashboardSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+          <div className="card-body">
+            <h4 style={styles.colorGrey} className="card-title font-weight-bold">Weather Dashboard</h4>
+            <p style={styles.colorGrey} className="card-text">A weather forecasting app which allows the user to select a city and see the current weather and a five day forecast.</p>
+              <div className="row">
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Repo" href="https://github.com/stevenslade/WeatherDashboard"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Deployed App" href="https://stevenslade.github.io/WeatherDashboard/"><i style={styles.iconStyle} className="bi bi-gear-fill"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    <div className="row d-flex justify-content-evenly">
+      <div className="card" style={styles.cardStyle}>
+        <img src="./assets/images/SSBW.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+          <div className="card-body">
+            <h4 style={styles.colorGrey} className="card-title font-weight-bold">Travel Budget Tracker</h4>
+            <p style={styles.colorGrey} className="card-text">A simple budget tracker allowing the user to enter positive and negative fund allocations to see a total remaining balance.</p>
+              <div className="row">
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Repo" href="https://github.com/stevenslade/Budget-Tracker"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Deployed App" href="https://stark-reaches-88697.herokuapp.com/"><i style={styles.iconStyle} className="bi bi-gear-fill"></i></a>
+              </div>
+          </div>
+        </div>
+        <div className="card" style={styles.cardStyle}>
+          <img src="./assets/images/TTSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+          <div className="card-body">
+           <h4 style={styles.colorGrey} className="card-title font-weight-bold">Tech Blog</h4>
+            <p style={styles.colorGrey} className="card-text">This app allows the user to make a profile, leave book reviews, read reviews left by other users and create a club for other users to join to discuss books.</p>
+              <div className="row">
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Repo" href="https://github.com/stevenslade/Tech-Theory"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Deployed App" href="https://arcane-forest-46584.herokuapp.com/"><i style={styles.iconStyle} className="bi bi-gear-fill"></i></a>
+              </div>
+          </div>
+        </div>
+        <div className="card" style={styles.cardStyle}>
+          <img src="./assets/images/WorkDaySchedulerSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+          <div className="card-body">
+            <h4 style={styles.colorGrey} className="card-title font-weight-bold">Work Day Scheduler</h4>
+            <p style={styles.colorGrey} className="card-text">This app allows the user to make a profile, leave book reviews, read reviews left by other users and create a club for other users to join to discuss books.</p>
+              <div className="row">
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Repo" href="https://github.com/stevenslade/Homework-GT-FSF-PT-06-2021/tree/main/05-Third-Party-APIs-Work-Day-Scheduler"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+                <a className="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see the Deployed App" href="https://stevenslade.github.io/Homework-GT-FSF-PT-06-2021/05-Third-Party-APIs-Work-Day-Scheduler/"><i style={styles.iconStyle} className="bi bi-gear-fill"></i></a>
+                </div>
+            </div>
+          </div>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const styles = {
     borderStyle: 'solid',
     borderColor: '#717E8E',
     borderRadius: '10px',
-    marginTop: '10px',
+    marginTop: 'auto',
   },
   textStyle: {
     fontColor: '#717E8E',
@@ -41,7 +41,6 @@ export default function Resume() {
       <h1 style={styles.headStyle}>Skills and Resume</h1>
       <hr style={styles.hrStyle}/>
       <div className="row">
-
         <div className="col-4">
           <ul>
             <li>React.js</li>
@@ -58,9 +57,7 @@ export default function Resume() {
             <li>Agile Methodoloy</li>
             <li>Git</li>
           </ul>
-        </div>
-
-      
+        </div>    
         <div style={styles.imgContainer} className="col-xs-12 col-md-8">
           <div className="row">
             <div className="col-12">
@@ -74,7 +71,6 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }
