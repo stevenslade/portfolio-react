@@ -29,20 +29,20 @@ const styles = {
 export default function Footer() {
   return (
     <footer style={styles.footerStyle} className="footer"> 
-      <div className="container" >
+      {/* <div className="container" > */}
         <div style={styles.footerStyle} className="row">
       
-          <h1 style={styles.textStyle} className="col-5">Full Stack Software Engineer</h1>
+          <h1 style={styles.textStyle} className="col-5 col-lg-8">Full Stack Software Engineer</h1>
           
-          <a className="col-2" href="https://github.com/stevenslade" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+          <a className="col-2 col-lg-1" href="https://github.com/stevenslade" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-github"></i></a>
       
-          <a className="col-2" href="https://www.linkedin.com/in/benjamin-slinde" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-linkedin"></i></a>
+          <a className="col-2 col-lg-1" href="https://www.linkedin.com/in/benjamin-slinde" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-linkedin"></i></a>
 
-          <a className="col-2" href="https://stackexchange.com/users/21525143/benjamin-slinde" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-stack-overflow"></i></a>
+          <a className="col-2 col-lg-1" href="https://stackexchange.com/users/21525143/benjamin-slinde" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-stack-overflow"></i></a>
           
         </div>
       
-      </div>
+      {/* </div> */}
     </footer>
   );
 }
