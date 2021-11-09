@@ -29,7 +29,7 @@ const styles = {
 export default function Footer() {
   return (
     <footer style={styles.footerStyle} className="footer"> 
-    <div className="container-fluid" >
+      <div className="container" >
         <div style={styles.footerStyle} className="row">
       
           <h1 style={styles.textStyle} className="col-5">Full Stack Software Engineer</h1>
