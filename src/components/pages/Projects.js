@@ -43,7 +43,7 @@ export default function Projects() {
       <div className="row d-flex justify-content-evenly">
         <div className="card" style={styles.cardStyle}>
           <div style={styles.imageContStyle}>
-            <img style={styles.imgStyle} src="./assets/images/screenshothome.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+            <img style={styles.imgStyle} src="./assets/images/screenshothome.png" className="card-img-top mt-2" alt="book shelf and cards of book reviews" />
           </div>
           <div className="card-body d-flex align-items-start flex-column">
            <h4 style={styles.colorGrey} className="card-title font-weight-bold">Book Club Collective</h4>
@@ -56,7 +56,7 @@ export default function Projects() {
         </div>
         <div className="card" style={styles.cardStyle}>
           <div style={styles.imageContStyle}>
-            <img style={styles.imgStyle} src="./assets/images/HHSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+            <img style={styles.imgStyle} src="./assets/images/HHSS.png" className="card-img-top mt-2" alt="book shelf and cards of book reviews" />
           </div>
           <div className="card-body d-flex align-items-start flex-column">
             <h4 style={styles.colorGrey} className="card-title font-weight-bold">Hiking Hub</h4>
@@ -69,7 +69,7 @@ export default function Projects() {
         </div>
         <div className="card" style={styles.cardStyle}>
           <div style={styles.imageContStyle}>
-            <img style={styles.imgStyle} src="./assets/images/weatherDashboardSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+            <img style={styles.imgStyle} src="./assets/images/weatherDashboardSS.png" className="card-img-top mt-2" alt="book shelf and cards of book reviews" />
           </div>
           <div className="card-body d-flex align-items-start flex-column">
             <h4 style={styles.colorGrey} className="card-title font-weight-bold">Weather Dashboard</h4>
@@ -84,7 +84,7 @@ export default function Projects() {
     <div className="row d-flex justify-content-evenly">
       <div className="card" style={styles.cardStyle}>
         <div style={styles.imageContStyle}>
-          <img style={styles.imgStyle} src="./assets/images/SSBW.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+          <img style={styles.imgStyle} src="./assets/images/SSBW.png" className="card-img-top mt-2" alt="book shelf and cards of book reviews" />
         </div>
           <div className="card-body d-flex align-items-start flex-column">
             <h4 style={styles.colorGrey} className="card-title font-weight-bold">Travel Budget Tracker</h4>
@@ -97,7 +97,7 @@ export default function Projects() {
         </div>
         <div className="card" style={styles.cardStyle}>
           <div style={styles.imageContStyle}>
-            <img style={styles.imgStyle} src="./assets/images/TTSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+            <img style={styles.imgStyle} src="./assets/images/TTSS.png" className="card-img-top mt-2" alt="book shelf and cards of book reviews" />
           </div>
           <div className="card-body d-flex align-items-start flex-column">
            <h4 style={styles.colorGrey} className="card-title font-weight-bold">Tech Blog</h4>
@@ -110,7 +110,7 @@ export default function Projects() {
         </div>
         <div className="card" style={styles.cardStyle}>
           <div style={styles.imageContStyle}>
-            <img style={styles.imgStyle} src="./assets/images/WorkDaySchedulerSS.png" class="card-img-top mt-2" alt="book shelf and cards of book reviews" />
+            <img style={styles.imgStyle} src="./assets/images/WorkDaySchedulerSS.png" className="card-img-top mt-2" alt="book shelf and cards of book reviews" />
           </div>
           <div className="card-body d-flex align-items-start flex-column">
             <h4 style={styles.colorGrey} className="card-title font-weight-bold">Work Day Scheduler</h4>

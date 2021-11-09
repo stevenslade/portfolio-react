@@ -28,11 +28,13 @@ const styles = {
     minHeight: '200px',
     minWidth: '200px',
   },
-  imgStyle: {
-    borderRadius: '10px',
+  inputStyle: {
+    marginTop: '10px',
   },
-  colorGrey: {
-    color: '#717E8E',
+  submitBtnStyle: {
+    marginTop: '10px',
+    marginBottom: '10px',
+    borderRadius: '5px',
   },
 };
 
@@ -85,31 +87,53 @@ export default function Contact() {
     setEmail('');
   };
 
-
-
-
-
-
-
-
-
-
   return (
     <div style={styles.contactStyle} className="container">
       <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+
+      <div>
+      <p>If you would to contact me please use the form below</p>
+      <form className="form">
+        <div style={styles.inputStyle}>
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="email"
+        />
+        </div>
+        <div style={styles.inputStyle}>
+        <input
+          value={senderName}
+          name="senderName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="yourname"
+        />
+        </div>
+        <div style={styles.inputStyle}>
+        <input
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="textarea"
+          size="50"
+          maxLength="200"
+          placeholder="message"
+        />
+        </div>
+        <div>
+        <button style={styles.submitBtnStyle} type="button" className="btn-primary" onClick={handleFormSubmit}>Submit</button>
+        </div>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
+    </div>
+     
     </div>
   );
 }
