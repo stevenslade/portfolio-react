@@ -71,7 +71,7 @@ export default function Resume() {
               </h3>
             </div>
             <div className="col-12">
-            <a href="./assets/pdf/BS-SE-10082012.pdf"><img style={styles.image} className="" src={"./assets/images/ssbsresume.png"} alt=" of Ben Slinde's resume" /></a>
+            <a href="./assets/pdf/BS-SE-10082012.pdf" target="_blank" rel="noreferrer noopener"><img style={styles.image} className="" src={"./assets/images/ssbsresume.png"} alt=" of Ben Slinde's resume" /></a>
             </div>
           </div>
         </div>

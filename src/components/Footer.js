@@ -34,11 +34,11 @@ export default function Footer() {
       
           <h1 style={styles.textStyle} className="col-5">Full Stack Software Engineer</h1>
           
-          <a className="col-2" href="https://github.com/stevenslade"><i style={styles.iconStyle} className="bi bi-github"></i></a>
+          <a className="col-2" href="https://github.com/stevenslade" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-github"></i></a>
       
-          <a className="col-2" href="https://www.linkedin.com/in/benjamin-slinde"><i style={styles.iconStyle} className="bi bi-linkedin"></i></a>
+          <a className="col-2" href="https://www.linkedin.com/in/benjamin-slinde" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-linkedin"></i></a>
 
-          <a className="col-2" href="https://stackexchange.com/users/21525143/benjamin-slinde"><i style={styles.iconStyle} className="bi bi-stack-overflow"></i></a>
+          <a className="col-2" href="https://stackexchange.com/users/21525143/benjamin-slinde" target="_blank" rel="noreferrer noopener"><i style={styles.iconStyle} className="bi bi-stack-overflow"></i></a>
           
         </div>
       
