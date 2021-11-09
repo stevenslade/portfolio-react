@@ -7,15 +7,17 @@ const styles = {
     borderColor: '#717E8E',
     borderRadius: '10px',
     marginTop: '10px',
+    background: 'black',
   },
   textStyle: {
-    fontColor: '#717E8E',
+    color: '#717E8E',
   },
   headStyle: {
     marginTop:'10px',
+    color: '#717E8E',
   },
   hrStyle: {
-    borderTop: '10px solid black',
+    borderTop: '10px solid white',
   },
   image: {
     height: '200px',

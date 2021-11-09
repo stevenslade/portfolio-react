@@ -16,6 +16,8 @@ const styles = {
   headStyle: {
     marginTop:'10px',
     textAlign: 'center',
+    color: '#717E8E',
+    backgroundColor: 'black',
   },
   imageContStyle: {
     minHeight: '200px',

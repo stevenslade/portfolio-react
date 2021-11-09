@@ -7,16 +7,18 @@ const styles = {
     borderColor: '#717E8E',
     borderRadius: '10px',
     marginTop: 'auto',
+    background: 'black',
   },
   textStyle: {
-    fontColor: '#717E8E',
+    color: '#717E8E',
     textAlign: 'center',
   },
   headStyle: {
     marginTop:'10px',
+    color: '#717E8E',
   },
   hrStyle: {
-    borderTop: '10px solid black',
+    borderTop: '10px solid white',
   },
   image: {
     height: '200px',
@@ -32,7 +34,10 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     marginBottom: '25px',
-  }
+  },
+  colorGrey: {
+    color: '#717E8E',
+  },
 };
 
 export default function Resume() {
@@ -42,7 +47,7 @@ export default function Resume() {
       <hr style={styles.hrStyle}/>
       <div className="row">
         <div className="col-4">
-          <ul>
+          <ul style={styles.colorGrey}>
             <li>React.js</li>
             <li>JavaScript</li>
             <li>Express.js</li>
