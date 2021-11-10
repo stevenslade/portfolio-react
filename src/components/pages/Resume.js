@@ -8,6 +8,7 @@ const styles = {
     borderRadius: '10px',
     marginTop: 'auto',
     background: 'black',
+    maxWidth: '800px'
   },
   textStyle: {
     color: '#717E8E',
@@ -47,7 +48,7 @@ export default function Resume() {
       <hr style={styles.hrStyle}/>
       <div className="row">
         <div className="col-4">
-          <ul style={styles.colorGrey}>
+          <ul style={styles.colorGrey} className="fs-4">
             <li>React.js</li>
             <li>JavaScript</li>
             <li>Express.js</li>

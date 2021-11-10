@@ -9,24 +9,9 @@ const styles = {
     borderStyle: 'solid',
     borderColor: '#717E8E',
     borderRadius: '10px',
-    marginTop: '10px',
+    marginTop: '40px',
     background: 'black',
-  },
-  cardStyle: {
-    width: '20rem',
-    fontColor: '#717E8E',
-    borderStyle: 'solid',
-    borderColor: '#717E8E',
-    borderRadius: '10px',
-    borderWidth: '3px',
-    marginTop: '20px',
-    marginLeft: '5px',
-    marginRight: '5px',
-    background: 'black',
-  },
-  imageContStyle: {
-    minHeight: '200px',
-    minWidth: '200px',
+    maxWidth: '600px',
   },
   inputStyle: {
     marginTop: '10px',
@@ -39,8 +24,7 @@ const styles = {
 };
 
 export default function Contact() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
+ 
   const [email, setEmail] = useState('');
   const [senderName, setSenderName] = useState('');
   const [message, setMessage] = useState('');
@@ -71,20 +55,13 @@ export default function Contact() {
       setErrorMessage('Email or username is invalid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    // if (!checkPassword(password)) {
-    //   setErrorMessage(
-    //     `Choose a more secure password for the account: ${userName}`
-    //   );
-    //   return;
-    // }
-    // alert(`Hello ${userName}`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setSenderName('');
     setMessage('');
     setEmail('');
+    setErrorMessage('')
   };
 
   return (
@@ -92,7 +69,7 @@ export default function Contact() {
       <h1>Contact Page</h1>
 
       <div>
-      <p>If you would to contact me please use the form below</p>
+      <p>If you would to contact me, please use the form below.</p>
       <form className="form">
         <div style={styles.inputStyle}>
         <input
@@ -112,17 +89,11 @@ export default function Contact() {
           placeholder="yourname"
         />
         </div>
+
         <div style={styles.inputStyle}>
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="textarea"
-          size="50"
-          maxLength="200"
-          placeholder="message"
-        />
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="message" onChange={e=>setMessage(e.target.value)} value={message}></textarea>
         </div>
+
         <div>
         <button style={styles.submitBtnStyle} type="button" className="btn-primary" onClick={handleFormSubmit}>Submit</button>
         </div>

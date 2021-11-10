@@ -34,11 +34,14 @@ const styles = {
     color: 'blue',
     margin: '10px',
   },
+  bmargin: {
+    marginBottom: '200px',
+  }
 };
 
 export default function Projects() {
   return (
-    <div className="container">
+    <div style={styles.bmargin} className="container">
       <h1 style={styles.headStyle}>Showcased Projects</h1>
       <div className="row d-flex justify-content-evenly">
         <div className="card" style={styles.cardStyle}>
