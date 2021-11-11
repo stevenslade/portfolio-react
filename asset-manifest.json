@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.66e3493a.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.99af047f.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.99af047f.chunk.js.map",
+    "runtime-main.js": "/portfolio-react/static/js/runtime-main.59ef7322.js",
+    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.59ef7322.js.map",
+    "static/css/2.f2060b37.chunk.css": "/portfolio-react/static/css/2.f2060b37.chunk.css",
+    "static/js/2.0d2f5574.chunk.js": "/portfolio-react/static/js/2.0d2f5574.chunk.js",
+    "static/js/2.0d2f5574.chunk.js.map": "/portfolio-react/static/js/2.0d2f5574.chunk.js.map",
+    "index.html": "/portfolio-react/index.html",
+    "static/css/2.f2060b37.chunk.css.map": "/portfolio-react/static/css/2.f2060b37.chunk.css.map",
+    "static/css/main.66e3493a.chunk.css.map": "/portfolio-react/static/css/main.66e3493a.chunk.css.map",
+    "static/js/2.0d2f5574.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.0d2f5574.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/portfolio-react/static/media/bootstrap-icons.7165e5d7.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59ef7322.js",
+    "static/css/2.f2060b37.chunk.css",
+    "static/js/2.0d2f5574.chunk.js",
+    "static/css/main.66e3493a.chunk.css",
+    "static/js/main.99af047f.chunk.js"
+  ]
+}
