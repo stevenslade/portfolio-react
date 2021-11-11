@@ -14,8 +14,8 @@ const styles = {
   },
 };
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
+// Use destructuring to get variables from the props object
+// Assign to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div style={styles.navStyle} className="row">

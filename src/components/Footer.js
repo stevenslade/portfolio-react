@@ -11,9 +11,6 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
   },
-  greyColor: {
-    backgroundColor: '#717E8E',
-  },
   textStyle: {
     fontColor: 'black',
     backgroundColor: '#717E8E',

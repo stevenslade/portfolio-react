@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Import a helper function that will check if the email is valid
+// helper function for email validation
 import { validateEmail } from '../../utils/helpers';
 
 const styles = {
@@ -36,7 +36,7 @@ export default function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
+    // Based on the input type, set the state
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'senderName') {
@@ -47,17 +47,17 @@ export default function Contact() {
   };
 
     const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+    // Preventing the default behavior of the form submit
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the senderName is empty. If so we set an error message to be displayed on the page.
+    // check to see if the email is not valid or if the senderName is empty. If so set an error message to be displayed on the page.
     if (!validateEmail(email) || !senderName) {
-      setErrorMessage('Email or username is invalid');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
+      setErrorMessage('Email or name is invalid');
+      // exit out of this code block if something is wrong so that the user can correct it
       return;
     }
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    // clear out the input after a successful registration.
     setSenderName('');
     setMessage('');
     setEmail('');
@@ -70,6 +70,7 @@ export default function Contact() {
 
       <div>
       <p>If you would to contact me, please use the form below.</p>
+      <p>All fields are required.</p>
       <form className="form">
         <div style={styles.inputStyle}>
         <input
@@ -78,6 +79,7 @@ export default function Contact() {
           onChange={handleInputChange}
           type="email"
           placeholder="email"
+          required
         />
         </div>
         <div style={styles.inputStyle}>
@@ -87,11 +89,12 @@ export default function Contact() {
           onChange={handleInputChange}
           type="text"
           placeholder="yourname"
+          required
         />
         </div>
 
         <div style={styles.inputStyle}>
-        <textarea id="message" name="message" rows="4" cols="50" placeholder="message" onChange={e=>setMessage(e.target.value)} value={message}></textarea>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="message" onChange={e=>setMessage(e.target.value)} value={message} required></textarea>
         </div>
 
         <div>
