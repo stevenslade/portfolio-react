@@ -10,9 +10,9 @@ This portfolio contains a collection of projects I have developed so far as part
 * The portfolio was compiled with React
 * Individual projects detail skills used for each
 
-## <a id="sample"></a>Visit my Portfolio
+## <a id="sample"></a>Visit my React Portfolio
 
-https://github.com/stevenslade/portfolio-react
+https://stevenslade.github.io/portfolio-react/
 
 ## <a id="screenshot"></a>Screenshot
 
