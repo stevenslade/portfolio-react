@@ -12,8 +12,8 @@ This portfolio contains a collection of projects I have developed so far as part
 
 ## <a id="sample"></a>Visit my Portfolio
 
-https://stevenslade.github.io/Portfolio/
+https://github.com/stevenslade/portfolio-react
 
 ## <a id="screenshot"></a>Screenshot
 
-![screenshot of Portfolio](./assets/images/ProSS.png)
+![screenshot of Portfolio](./public/assets/images/ProReactSS.png)
